@@ -1,10 +1,11 @@
 /* Algemene stijlen */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #002147;
+    color: #333;
     background-color: #FFFFFF;
+    line-height: 1.6;
 }
 
 .container {
@@ -16,35 +17,64 @@ body {
 
 h1, h2, h3 {
     color: #002147;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 p {
-    color: #808080;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 a {
     text-decoration: none;
     color: #002147;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2E8B57;
 }
 
 .cta-button {
     background-color: #2E8B57;
     color: #FFFFFF;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1F6F4A;
 }
 
 /* Header */
 header {
     background-color: #002147;
     color: #FFFFFF;
-    padding: 10px 0;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -58,22 +88,23 @@ header nav ul {
 
 header nav ul li a {
     color: #FFFFFF;
+    font-weight: 500;
 }
 
 /* Hero Sectie */
 #hero {
     background-color: #F5F5F5;
     text-align: center;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 #hero h1 {
-    font-size: 36px;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
 #hero p {
-    font-size: 18px;
+    font-size: 1.25rem;
     margin-bottom: 20px;
 }
 
@@ -81,12 +112,14 @@ header nav ul li a {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Probleem Sectie */
 #probleem {
     background-color: #FFFFFF;
-    padding: 50px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -94,12 +127,14 @@ header nav ul li a {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Oplossing Sectie */
 #oplossing {
     background-color: #F5F5F5;
-    padding: 50px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -107,12 +142,14 @@ header nav ul li a {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Drie Vragen Sectie */
 #vragen {
     background-color: #FFFFFF;
-    padding: 50px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -130,6 +167,7 @@ header nav ul li a {
     border-radius: 10px;
     width: 100%;
     max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .vraag button {
@@ -140,12 +178,19 @@ header nav ul li a {
     border-radius: 5px;
     cursor: pointer;
     margin: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.vraag button:hover {
+    background-color: #1F6F4A;
 }
 
 /* USP’s Sectie */
 #usps {
     background-color: #F5F5F5;
-    padding: 50px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -163,6 +208,7 @@ header nav ul li a {
     border-radius: 10px;
     width: 100%;
     max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .usp-icon {
@@ -175,7 +221,7 @@ header nav ul li a {
 footer {
     background-color: #002147;
     color: #FFFFFF;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -190,13 +236,14 @@ footer ul {
 
 footer ul li a {
     color: #FFFFFF;
+    font-weight: 500;
 }
 
 /* Media Queries voor Responsive Design */
 @media (max-width: 768px) {
     /* Header */
     header .logo {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     header nav ul {
@@ -206,11 +253,11 @@ footer ul li a {
 
     /* Hero Sectie */
     #hero h1 {
-        font-size: 28px;
+        font-size: 2rem;
     }
 
     #hero p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     /* Vragen Sectie */
@@ -237,16 +284,16 @@ footer ul li a {
 @media (max-width: 480px) {
     /* Header */
     header .logo {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     /* Hero Sectie */
     #hero h1 {
-        font-size: 24px;
+        font-size: 1.75rem;
     }
 
     #hero p {
-        font-size: 14px;
+        font-size: 0.9rem;
     }
 
     /* Footer */
